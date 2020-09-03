@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('/whoareyou', 'PagesController@whoareyou')->name('you');
+Route::get('/thetrip', 'PagesController@trip')->name('trip');
 
 Auth::routes();
 
