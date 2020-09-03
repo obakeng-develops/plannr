@@ -24,7 +24,7 @@
                                 <input type="text" class="form-control border-top-0 border-left-0 border-right-0" />
                                 <p class="small text-muted pt-2">What can we call you?</p>
                             </div>
-                            <button class="btn btn-lg btn-danger" type="submit">Let's start planning</button>
+                            <button class="btn btn-lg mt-3 btn-danger" type="submit">Let's start planning</button>
                         </div>
                     </div>
                 </div>
