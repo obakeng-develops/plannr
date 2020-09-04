@@ -15,6 +15,11 @@
                                 <p class="small text-muted pt-2">What's the damage?</p>
                             </div>
                             <div class="form-group">
+                                <label>Date:</label>
+                                <input type="date" class="form-control border-top-0 border-left-0 border-right-0" />
+                                <p class="small text-muted pt-2">When do you want to go?</p>
+                            </div>
+                            <div class="form-group">
                                 <label>Location:</label>
                                 <input type="text" class="form-control border-top-0 border-left-0 border-right-0" />
                                 <p class="small text-muted pt-2">That place you fought for during planning.</p>
