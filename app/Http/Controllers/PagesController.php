@@ -14,6 +14,10 @@ class PagesController extends Controller
         return view('aboutyou');
     }
 
+    public function budget() {
+        return view('budget');
+    }
+
     public function trip() {
         return view('trip');
     }
