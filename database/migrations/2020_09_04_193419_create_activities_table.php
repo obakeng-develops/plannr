@@ -15,9 +15,9 @@ class CreateActivitiesTable extends Migration
     {
         Schema::create('activities', function (Blueprint $table) {
             $table->id();
-            $table->string('activity_name');
+            $table->string('activity_name', 100);
             $table->time('activity_time');
-            $table->string('activity_location');
+            $table->string('activity_location', 100);
             $table->foreignId('plans_id');
             $table->timestamps();
         });
