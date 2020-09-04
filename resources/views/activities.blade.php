@@ -11,15 +11,21 @@
                         <div class="pt-3 pb-3 pl-3 pr-3">
                             <div class="form-group">
                                 <label>First activity:</label>
-                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" />
+                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Activity 1" />
+                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Location" />
+                                <input type="time" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Time" />
                             </div>
                             <div class="form-group">
                                 <label>Second activity:</label>
-                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" />
+                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Activity 2" />
+                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Location" />
+                                <input type="time" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Time" />
                             </div>
                             <div class="form-group">
                                 <label>Third activity:</label>
-                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" />
+                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Activity 3" />
+                                <input type="text" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Location" />
+                                <input type="time" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Time" />
                             </div>
                             <button class="btn btn-lg mt-3 btn-danger" type="submit">Continue</button>
                         </div>
