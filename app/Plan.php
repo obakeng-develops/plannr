@@ -10,4 +10,8 @@ class Plan extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    public function guest(){
+        return $this->hasMany('App\Guest');
+    }
 }
