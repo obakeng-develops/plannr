@@ -14,4 +14,8 @@ class Plan extends Model
     public function guest(){
         return $this->hasMany('App\Guest');
     }
+
+    public function activity(){
+        return $this->hasMany('App\Activity');
+    }
 }
