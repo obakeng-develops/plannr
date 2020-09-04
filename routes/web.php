@@ -17,6 +17,8 @@ Route::get('/', 'PagesController@index');
 Route::get('/whoareyou', 'PagesController@aboutYou')->name('you');
 Route::get('/budget', 'PagesController@budget')->name('budget');
 Route::get('/activities', 'PagesController@activities')->name('activities');
+Route::get('/guests', 'PagesController@guests')->name('guests');
+Route::get('/itinerary', 'PagesController@itinerary')->name('finish');
 
 Auth::routes();
 

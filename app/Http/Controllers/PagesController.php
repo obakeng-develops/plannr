@@ -22,6 +22,14 @@ class PagesController extends Controller
         return view('activities');
     }
 
+    public function guests() {
+        return view('guests');
+    }
+
+    public function itinerary() {
+        return view('itinerary');
+    }
+
     public function trip() {
         return view('trip');
     }
