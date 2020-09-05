@@ -9,10 +9,12 @@ use App\User;
 
 class PlanController extends Controller
 {
-    public function updatePlan(Request $request )
+    public function updatePlan(Request $request)
     {
-        $user = $request['user'];
-        $plan = Plan::where('user_id', $user)->first();
+        $user_id = $request['user'];
+        $user = User::where('id', $user_id)->first();
+
+        $plan = Plan::where('user_id', $user_id)->first();
         $plan->budget = $request['budget'];
         $plan->plan_name = $request['plan_name'];
         $plan->country = $request['location'];
@@ -23,6 +25,7 @@ class PlanController extends Controller
         
         return view('activities')->with([
             'plan' => $plan,
+            'user' => $user,
         ]);
     }
 }

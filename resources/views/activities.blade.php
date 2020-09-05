@@ -2,7 +2,8 @@
 
 @section('content')
 <div class="container-fluid">
-    <form method="POST" action="{{ route('') }}">
+    <form method="POST" action="{{ route('create') }}">
+    @csrf
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">
                 <h1 class="text-center pt-3">What are you off to do?</h1>
@@ -28,6 +29,7 @@
                                 <input type="time" name="time3" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Time" />
                             </div>
                             <input type="hidden" name="plan" value="{{ $plan->id }}">
+                            <input type="hidden" name="user" value="{{ $user->id }}">
                             <button class="btn btn-lg mt-3 btn-danger" type="submit">Continue</button>
                         </div>
                     </div>
