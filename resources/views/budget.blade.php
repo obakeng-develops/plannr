@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <form method="POST" action="{{ route('updatePlan', $plan->id) }}">
     @csrf
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center">
             <div class="col-md-4">
                 <h1 class="text-center pt-3">Tell us a little bit about your {{ $plan->plan_type }}.</h1>
                 <div class="col-md-12 pb-3">
