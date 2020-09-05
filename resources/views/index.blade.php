@@ -6,9 +6,9 @@
         <div class="col-md-8 text-center">
             <h1 class="display-3">Plannr</h1>
             <p class="lead text-muted">What are you planning to do?</p>
-            <form method="POST" action="{{ route('you') }}">
+            <form method="POST" action="{{ route('add_plan') }}">
                 <div class="form-group justify-content-center d-flex">
-                <select class="form-control form-control-lg w-50 rounded-0">
+                <select class="form-control form-control-lg w-50 rounded-0" name="plan_type">
                     <option name="night_out">Night out</option>
                     <option name="day_out">Day out</option>
                 </select>
