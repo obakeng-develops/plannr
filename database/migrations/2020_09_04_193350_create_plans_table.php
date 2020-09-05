@@ -16,12 +16,12 @@ class CreatePlansTable extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
             $table->string('plan_type', 50);
-            $table->string('plan_name', 100);
-            $table->string('country', 100);
-            $table->decimal('budget', 8, 2);
-            $table->integer('duration');
-            $table->string('number_of_people', 30);
-            $table->foreignId('user_id');
+            $table->string('plan_name', 100)->nullable();
+            $table->string('country', 100)->nullable();
+            $table->decimal('budget', 8, 2)->nullable();
+            $table->integer('duration')->nullable();
+            $table->string('number_of_people', 30)->nullable();
+            $table->foreignId('user_id')->nullable();
             $table->timestamps();
         });
     }
