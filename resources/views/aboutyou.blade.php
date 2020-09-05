@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container-fluid">
-    <form method="POST" action="{{ route('addUser') }}">
+    <form method="POST" action="{{ route('addUserPlan') }}">
     @csrf
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">

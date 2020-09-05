@@ -16,15 +16,15 @@ class UserController extends Controller
 
         $planType = $request['plan_type'];
 
-        $plan = new Plan;
-        $plan->plan_type = $planType;
-        $plan->save();
-
         $user = new User;
         $user->name = $name;
         $user->email = $email;
         $user->nick_name = $nick_name;
         $plan->save();
+
+        $plan = new Plan;
+        $plan->plan_type = $planType;
+        $plan->user_id = $user->id;
 
         return redirect()->route('/');
     }
