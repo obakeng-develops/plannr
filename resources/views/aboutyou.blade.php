@@ -28,8 +28,8 @@
                             <div class="form-group">
                                 <label>Type of day:</label>
                                 <select class="form-control form-control-lg w-50 border-top-0 border-right-0 border-left-0" name="plan_type">
-                                <option name="night_out">Night out</option>
-                                <option name="day_out">Day out</option>
+                                <option name="night_out">night out</option>
+                                <option name="day_out">day out</option>
                                 </select>
                                 <p class="small text-muted pt-2">Are you a night-owl or day-walker?</p>
                             </div>

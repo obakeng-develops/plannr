@@ -13,14 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->name('index');
 Route::get('/whoareyou', 'PagesController@aboutYou')->name('you');
 Route::get('/budget', 'PagesController@budget')->name('budget');
 Route::get('/activities', 'PagesController@activities')->name('activities');
 Route::get('/guests', 'PagesController@guests')->name('guests');
 Route::get('/itinerary', 'PagesController@itinerary')->name('finish');
 
-Route::post('/user/add', 'UserController@addUserPlan')->name('addUserPlan');
+Route::post('/user/plan/add', 'UserController@addUserPlan')->name('addUserPlan');
+Route::get('/user/plan/update/', 'PlanController@updatePlan')->name('updatePlan');
 
 Auth::routes();
 

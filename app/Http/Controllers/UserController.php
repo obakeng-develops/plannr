@@ -20,12 +20,17 @@ class UserController extends Controller
         $user->name = $name;
         $user->email = $email;
         $user->nick_name = $nick_name;
-        $plan->save();
+        $user->save();
 
         $plan = new Plan;
         $plan->plan_type = $planType;
         $plan->user_id = $user->id;
+        $plan->save();
 
-        return redirect()->route('/');
+
+        return view('budget')->with([
+            'user' => $user,
+            'plan' => $plan,
+        ]);
     }
 }
