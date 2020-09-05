@@ -21,7 +21,7 @@ Route::get('/guests', 'PagesController@guests')->name('guests');
 Route::get('/itinerary', 'PagesController@itinerary')->name('finish');
 
 Route::post('/user/plan/add', 'UserController@addUserPlan')->name('addUserPlan');
-Route::get('/user/plan/update/', 'PlanController@updatePlan')->name('updatePlan');
+Route::post('/user/plan/update/', 'PlanController@updatePlan')->name('updatePlan');
 
 Auth::routes();
 

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container-fluid">
-    <form method="GET" action="{{ route('updatePlan', $user->user_id) }}">
+    <form method="POST" action="{{ route('updatePlan', $plan->id) }}">
     @csrf
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">
@@ -35,6 +35,7 @@
                                 <input type="text" name="number_of_people" class="form-control border-top-0 border-left-0 border-right-0" />
                                 <p class="small text-muted pt-2">Let's be honest, how many people are really going?</p>
                             </div>
+                            <input type="hidden" name="user" value="{{ $user->id }}">
                             <button class="btn btn-lg mt-3 btn-danger" type="submit">Continue</button>
                         </div>
                     </div>

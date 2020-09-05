@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Plan;
+use App\User;
 
 class PlanController extends Controller
 {
-    public function updatePlan(Request $request, $id)
+    public function updatePlan(Request $request )
     {
-        /*$plan = Plan::where('user_id', $user)->first();
+        $user = $request['user'];
+        $plan = Plan::where('user_id', $user)->first();
+        $plan->budget = $request['budget'];
         $plan->plan_name = $request['plan_name'];
         $plan->country = $request['location'];
         $plan->duration = 1;
@@ -21,8 +24,5 @@ class PlanController extends Controller
         return view('activities')->with([
             'plan' => $plan,
         ]);
-        */
-
-        print($user);
     }
 }

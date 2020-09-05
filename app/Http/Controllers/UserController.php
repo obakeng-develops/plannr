@@ -30,7 +30,7 @@ class UserController extends Controller
 
         return view('budget')->with([
             'user' => $user,
-            'plan' => $plan,
+            'plan' => $plan
         ]);
     }
 }
