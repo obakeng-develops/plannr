@@ -15,7 +15,7 @@ class CreatePlansTable extends Migration
     {
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
-            $table->enum('plan_type', ['day_out', 'night_out']);
+            $table->string('plan_type', 50);
             $table->string('plan_name', 100);
             $table->string('country', 100);
             $table->decimal('budget', 8, 2);

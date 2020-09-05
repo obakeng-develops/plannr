@@ -20,7 +20,7 @@ Route::get('/activities', 'PagesController@activities')->name('activities');
 Route::get('/guests', 'PagesController@guests')->name('guests');
 Route::get('/itinerary', 'PagesController@itinerary')->name('finish');
 
-Route::post('/whoareyou/{plan}', 'PlanController@addPlan')->name('add_plan');
+Route::post('/whoareyou/add', 'PlanController@addPlan')->name('add_plan');
 
 Auth::routes();
 

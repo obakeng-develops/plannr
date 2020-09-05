@@ -7,6 +7,7 @@
             <h1 class="display-3">Plannr</h1>
             <p class="lead text-muted">What are you planning to do?</p>
             <form method="POST" action="{{ route('add_plan') }}">
+            @csrf
                 <div class="form-group justify-content-center d-flex">
                 <select class="form-control form-control-lg w-50 rounded-0" name="plan_type">
                     <option name="night_out">Night out</option>
