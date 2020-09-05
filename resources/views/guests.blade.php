@@ -15,19 +15,19 @@
                                 <label>Guest 1:</label>
                                 <input type="text" name="guest1" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Guest Name"/>
                                 <input type="email" name="email1" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Guest Email" />
-                                <p class="small text-muted pt-2">Who paid first?</p>
+                                <p class="small text-muted pt-2">Who agreed to the plan first?</p>
                             </div>
                             <div class="form-group">
                                 <label>Guest 2:</label>
                                 <input type="text" name="guest2" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Guest Name"/>
                                 <input type="email" name="email2" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Guest Email" />
-                                <p class="small text-muted pt-2">Who paid after the first?</p>
+                                <p class="small text-muted pt-2">Who did you have to convince?</p>
                             </div>
                             <div class="form-group">
                                 <label>Guest 3:</label>
                                 <input type="text" name="name3" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Guest Name"/>
                                 <input type="email" name="email3" class="form-control border-top-0 border-left-0 border-right-0" placeholder="Guest Email" />
-                                <p class="small text-muted pt-2">Who paid last?</p>
+                                <p class="small text-muted pt-2">Who brings the energy to the trip?</p>
                             </div>
                             <input type="hidden" name="plan" value="{{ $plan->id }}">
                             <input type="hidden" name="user" value="{{ $user->id }}">

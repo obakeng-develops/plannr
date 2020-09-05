@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Plan;
 use App\Guest;
 use App\User;
+use App\Activity;
 
 class GuestController extends Controller
 {
@@ -15,6 +16,8 @@ class GuestController extends Controller
 
         $planInfo = Plan::where('user_id', $plan)->first();
         $userInfo = User::where('id', $user)->first();
+        $activityInfo = Activity::where('plans_id', $plan)->get();
+        $guestInfo = Guest::where('plans_id', $plan)->get();
 
         //for first guest
         $guest1 = $request['guest1'];
@@ -43,7 +46,7 @@ class GuestController extends Controller
         ]);
 
         //add third guest
-        $guest1 = Guest::create([
+        $guest3 = Guest::create([
             'guest_name' => $guest3,
             'guest_email' => $email3,
             'plans_id' => $plan,
@@ -52,6 +55,8 @@ class GuestController extends Controller
         return view('itinerary')->with([
             'plan' => $planInfo,
             'user' => $userInfo,
+            'activities' => $activityInfo,
+            'guests' => $guestInfo,
         ]);
     }
 }
